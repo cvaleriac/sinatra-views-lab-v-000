@@ -3,11 +3,17 @@ require_relative 'config/environment'
 class App < Sinatra::Base
 
 	get '/' do
-    erb :hello
+		erb :index
 	end
 
-	get '/goodbye' do
-		erb :goodbye
-	end
+  get '/hello' do
+    erb :hello
+  end
+
+  get '/goodbye' do
+    erb :goodbye
+  end
+
+	
 
 end
